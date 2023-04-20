@@ -49,4 +49,4 @@ However, the push will fail if the remote branch has diverged from your local br
 
 Similar to `git push`, `git fetch` also checks whether there is a tracking branch in the remote repository connected to your local branch. If so, it looks for changes in the remote branch and downloads them into the tracking branch without making changes. To update your local branch with these changes, use `git merge origin/master`. In this case, `origin/master` refers to the remote branch, which is the source of the changes. 
 
-`git pull` does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
+Another approach for synchronizing your local branch is to use `git pull`, which executes `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
