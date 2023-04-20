@@ -36,6 +36,8 @@ Edit the text so that it is easy to read:
 
 ### What is the difference between `git push`, `git pull`, and `git fetch`?
 
+Git is a version-control system that tracks changes across files. Git lets you clone remote repositories, work locally on the files, and add your changes back to the remote repository. You can synchronize your changes using the following commands:
+
 - `git push` - sent changes from a local branch to a remote repo
 - `git fetch` - get changes from a remote repo into your tracking branch
 - `git pull` - will get changes from a remote branch into your tracking branch and merge them into a local branch
