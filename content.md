@@ -1,44 +1,52 @@
 ## Overview
 
-This is a technical writing and editing project as part of your interview.
+As part of your interview, you'll complete a technical writing and editing project. You can expect this project to take 1-2 hours.
 
-This project is designed to take between 1 - 2 hours.
-Please take the time to carefully review the [writing style guide](../styling-guide-snippet.md).
+Before getting started, please review HashiCorp's [writing style guide](../styling-guide-snippet.md).
 
 ## Instructions
 
-Create a new GitHub repository with the following content (See [content](#content)) as the first commit. Make a branch and open a PR to edit the text for clarity, and include any questions about the content's meaning, as if you were editing a colleague’s work. 
+For this assignment, imagine you are editing a colleague's work. Using the following content snippet ([Content](#content)), edit the text for clarity. You are welcome to make any changes to improve the text, such as clarifying meaning, improving the explanations of concepts, or providing best practices. You may also include any questions about the content's meaning. The result should be a document that you, as a technical writer, are comfortable sharing with end users.
 
- **Any changes that you think will improve the text and explain the concepts better are welcome**. If anything in the text doesn’t match your opinion on a best practice, feel free to correct the meaning of the text. The result should be a document that you, as a technical writer, would be comfortable sharing with end-users.
+You'll share your edits using GitHub. Create a new GitHub repository with the ([Content](#content)) snippet as the first commit. Make a branch and open a Pull Request (PR) for your edits. Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
 
+**Note:** Please do not fork the original assignment repository. Instead, make a copy of all files, create your own repository, and submit a Pull Request for your own project. Do not merge the Pull Request.
 
-Construct your PR to teach the author:
-- Make atomic commits.
+## Guidelines
+
+As you work on your assignment, please keep the following in mind:
+
+- Construct your PR to teach the author how to make atomic commits.
 - Write your commit messages to show your rationale for edits.
-- Please construct your commits, commit messages, and PR description as you would for an actual PR as if you were collaborating with a team.
-- It is best to edit the files on your local machine and push with the `git` command or a desktop Git application rather than editing directly on the GitHub.com website.
+- Craft your commits, commit messages, and PR description as if you were collaborating with a team on an actual PR.
+- Edit the files on your local machine and push with the `git` command or a desktop Git application rather than editing directly on the GitHub website.
 
 Edit the text so that it is easy to read:
 - Correct errors.
-- Put the text in active voice and present tense.
-- Address the reader as you, not we.
-- Phrase statements as positive rather than negative.
-- Make the language simple and plain. 
+- Use the active voice and present tense.
+- Address the reader as "you", not "we".
+- Phrase statements positively rather than negatively.
+- Use simple, plain language. 
 - Avoid euphemisms.
 - Structure the text so it has a logical flow. 
-
-Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
-
-**NOTE**: DO NOT FORK THE PROJECT. MAKE A COPY OF ALL FILES, CREATE YOUR OWN FRESH REPOSITORY AND SUBMIT A PULL REQUEST TOWARDS YOUR OWN PROJECT. DO NOT MERGE THE PULL REQUEST.
 
 ---
 
 ## Content
 
-### What is the difference between push, pull, and fetch?
+### What is the difference between `git push`, `git pull`, and `git fetch`?
 
-- `git push` - sent changes from a local branch to a remote repo
-- `git fetch` - get changes from a remote repo into your tracking branch
-- `git pull` - will get changes from a remote branch into your tracking branch and merge them into a local branch
+Git is a version-control system that tracks changes across files. Git lets you clone remote repositories, work locally on the files, and add your changes back to the remote repository. You can synchronize your changes using the following commands:
 
-Often `git push` and `git pull` are described as equivalent. This isn't entirely correct, since under the hood `git pull` does two things. `git push` takes our current branch, and checks to see whether or not there is a tracking branch for a remote repository connected to it. If so, our changes are taken from our branch and pushed to the remote branch. This is how code is shared with a remote repository, you can think of it as "make the remote branch resemble my local branch". This will fail if the remote branch has diverged from your local branch: if not all the commits in the remote branch are in your local branch. When this happens, your local branch needs to be synchronized with the remote branch with git pull or git fetch and git merge.`git fetch` again takes our current branch, and checks to see if there is a tracking branch. If so, it looks for changes in the remote branch, and pulls them into the tracking branch. It does not change your local branch. To do that, you'll need to do `git merge origin/master` (for the "master" branch) to merge those changes into your branch - probably also called "master".`git pull` simply does a `git fetch` followed immediately by `git merge`. This is often what we desire to do, but some people prefer to use git fetch followed by git merge to make sure they understand the changes they are merging into their branch before the merge happens.
+- `git push` - sends changes from a local branch to a remote repository
+- `git fetch` - gets changes from a remote repository into your tracking branch without merging them
+- `git merge` - integrates changes from one branch into another branch
+- `git pull` - gets changes from a remote branch and merges them into a local branch
+
+To share local code with a remote repository, use `git push`. With `git push`, Git checks whether there is a tracking branch for a remote repository connected to your local branch. If so, Git takes your changes from the local branch and pushes them to the remote branch. 
+
+However, the push will fail if the remote branch has diverged from your local branch. For example, if there are commits in the remote branch that are not in your local branch, the push will fail. When this happens, synchronize your local branch with the remote branch by using `git fetch` with `git merge`, or by using `git pull`. 
+
+Similar to `git push`, `git fetch` also checks whether there is a tracking branch in the remote repository connected to your local branch. If so, it looks for changes in the remote branch and downloads them into the tracking branch without making changes. To update your local branch with these changes, use `git merge origin/master`. In this case, `origin/master` refers to the remote branch, which is the source of the changes. 
+
+Another approach for synchronizing your local branch is to use `git pull`, which executes `git fetch` followed immediately by `git merge`. This is a common approach, but we recommend using `git fetch` followed by `git merge` so that you understand the changes you are merging into your branch.
