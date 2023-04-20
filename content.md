@@ -24,7 +24,7 @@ As you work on your assignment, please keep the following in mind:
 Edit the text so that it is easy to read:
 - Correct errors.
 - Use the active voice and present tense.
-- Address the reader as you, not we.
+- Address the reader as "you", not "we".
 - Phrase statements as positive rather than negative.
 - Make the language simple and plain. 
 - Avoid euphemisms.
