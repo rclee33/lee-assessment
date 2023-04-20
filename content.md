@@ -10,6 +10,8 @@ For this assignment, imagine you are editing a colleague's work. Using the follo
 
 You'll share your edits using GitHub. Create a new GitHub repository with the ([Content](#content)) snippet as the first commit. Make a branch and open a Pull Request (PR) for your edits. Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
 
+**Note:** Please do not fork the original assignment repository. Instead, make a copy of all files, create your own repository, and submit a Pull Request for your own project. Do not merge the Pull Request.
+
 Construct your PR to teach the author:
 - Make atomic commits.
 - Write your commit messages to show your rationale for edits.
@@ -24,8 +26,6 @@ Edit the text so that it is easy to read:
 - Make the language simple and plain. 
 - Avoid euphemisms.
 - Structure the text so it has a logical flow. 
-
-**NOTE**: DO NOT FORK THE PROJECT. MAKE A COPY OF ALL FILES, CREATE YOUR OWN FRESH REPOSITORY AND SUBMIT A PULL REQUEST TOWARDS YOUR OWN PROJECT. DO NOT MERGE THE PULL REQUEST.
 
 ---
 
