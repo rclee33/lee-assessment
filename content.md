@@ -41,7 +41,7 @@ Git is a version-control system that tracks changes across files. Git lets you c
 - `git push` - sends changes from a local branch to a remote repository
 - `git fetch` - gets changes from a remote repository into your tracking branch without merging them
 - `git merge` - integrates changes from one branch into another branch
-- `git pull` - gets changes from a remote branch into your tracking branch and merges them into a local branch
+- `git pull` - gets changes from a remote branch and merges them into a local branch
 
 To share local code with a remote repository, use `git push`. With `git push`, Git checks whether there is a tracking branch for a remote repository connected to your local branch. If so, Git takes your changes from the local branch and pushes them to the remote branch. 
 
