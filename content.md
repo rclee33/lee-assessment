@@ -14,6 +14,8 @@ You'll share your edits using GitHub. Create a new GitHub repository with the ([
 
 ## Guidelines
 
+As you work on your assignment, please keep the following in mind:
+
 Construct your PR to teach the author:
 - Make atomic commits.
 - Write your commit messages to show your rationale for edits.
