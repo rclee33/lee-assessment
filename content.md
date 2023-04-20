@@ -2,7 +2,7 @@
 
 As part of your interview, you'll complete a technical writing and editing project. You can expect this project to take 1-2 hours.
 
-Please take the time to carefully review the [writing style guide](../styling-guide-snippet.md).
+Before getting started, please review HashiCorp's [writing style guide](../styling-guide-snippet.md).
 
 ## Instructions
 
