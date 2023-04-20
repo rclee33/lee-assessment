@@ -8,7 +8,7 @@ Before getting started, please review HashiCorp's [writing style guide](../styli
 
 For this assignment, imagine you are editing a colleague's work. Using the following content snippet ([Content](#content)), edit the text for clarity. You are welcome to make any changes to improve the text, such as clarifying meaning, improving the explanations of concepts, or providing best practices. You may also include any questions about the content's meaning. The result should be a document that you, as a technical writer, are comfortable sharing with end users.
 
-Create a new GitHub repository with the following content (See [content](#content)) as the first commit. Make a branch and open a PR to edit the text for clarity, and include any questions about the content's meaning, as if you were editing a colleague’s work. 
+You'll share your edits using GitHub. Create a new GitHub repository with the ([Content](#content)) snippet as the first commit. Make a branch and open a Pull Request (PR) for your edits. Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
 
 Construct your PR to teach the author:
 - Make atomic commits.
@@ -24,8 +24,6 @@ Edit the text so that it is easy to read:
 - Make the language simple and plain. 
 - Avoid euphemisms.
 - Structure the text so it has a logical flow. 
-
-Once you're finished with your edits, send the PR link to the HashiCorp recruiter.
 
 **NOTE**: DO NOT FORK THE PROJECT. MAKE A COPY OF ALL FILES, CREATE YOUR OWN FRESH REPOSITORY AND SUBMIT A PULL REQUEST TOWARDS YOUR OWN PROJECT. DO NOT MERGE THE PULL REQUEST.
 
