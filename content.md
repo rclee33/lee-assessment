@@ -12,6 +12,8 @@ You'll share your edits using GitHub. Create a new GitHub repository with the ([
 
 **Note:** Please do not fork the original assignment repository. Instead, make a copy of all files, create your own repository, and submit a Pull Request for your own project. Do not merge the Pull Request.
 
+## Guidelines
+
 Construct your PR to teach the author:
 - Make atomic commits.
 - Write your commit messages to show your rationale for edits.
