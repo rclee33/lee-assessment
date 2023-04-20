@@ -26,7 +26,7 @@ Edit the text so that it is easy to read:
 - Use the active voice and present tense.
 - Address the reader as "you", not "we".
 - Phrase statements positively rather than negatively.
-- Make the language simple and plain. 
+- Use simple, plain language. 
 - Avoid euphemisms.
 - Structure the text so it has a logical flow. 
 
